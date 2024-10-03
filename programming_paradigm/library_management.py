@@ -15,11 +15,10 @@ class Book:
 
 class Library:
    
-    def __init__(self) -> None:
+    def __init__(self):
         self._books = []
 
     def add_book(self, book):
-
         if isinstance(book, Book):
             self._books.append(book)
     
