@@ -4,7 +4,7 @@ class Book:
         self.author =  author
    
     def __str__(self):
-        return f"Book: {self.title} by {self.author} added"
+        return f"Book: {self.title} by {self.author}"
 
 class EBook(Book):
     def __init__(self, title:str, author:str, file_size:int):
@@ -35,7 +35,7 @@ class Library:
             raise TypeError("This type is not a book, only Book, Ebook or PrintBook can be added.")
         else:
             self.books.append(book)
-            print(f"{book} added")
+            # print(f"{book} added")
 
     def list_books(self):
         if not self.books:
